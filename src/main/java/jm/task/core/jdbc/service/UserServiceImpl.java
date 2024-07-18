@@ -8,6 +8,10 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     private final UserDaoJDBCImpl dao = new UserDaoJDBCImpl();
 
+    public UserServiceImpl() {
+
+    }
+    
     public void createUsersTable() {
         dao.createUsersTable();
     }
